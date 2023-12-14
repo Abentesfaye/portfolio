@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abenezer's Personal Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav>
+        <div class="container">
+            <div class="logo">the confused coder</div>
+
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Landing page -->
+    <section id="landing">
+        <div class="container">
+            <h1>Hello World</h1>
+            <h3>It's me Abenezer, the confused coder!</h3>
+            <p>A passionate Computer Science Student, full-stack developer and UI/UX designer hailing from the <span>land of origins.</span></p>
+            <a href="#blog" class="btn btn-primary">Read My Blog</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="root">
+                <div class="left">
+                    <p>Hello! I'm Abenezer, a passionate computer science student on a journey of self-discovery through code. I love solving puzzles, crafting elegant solutions, and diving into the ever-evolving world of technology. With a curious mind and a desire to learn, I thrive on challenges, even when they leave me feeling a little "confused." My goal is to not only understand the intricacies of coding but to create meaningful, innovative solutions that make a positive impact on the world.</p>
+                </div>
+                <div class="right">
+                    <p>Beyond coding, I'm an avid reader, a lover of all things science fiction, and a coffee enthusiast. I believe that the best code is written when the mind is fueled by a strong cup of coffee. Whether it's building web applications, exploring AI, or simply getting lost in a good book, I'm always eager to explore the next challenge that comes my way.</p>
+                </div>
+            </div>
+            <div class="btnA">
+                <a href="#blog" class="btn btn-primary">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 align="center">Skills</h2>
+
+            <div class="skill-list">
+                <div class="skill-items">
+                    <div class="skill-img">
+                        <img src="./img/skill 1.png" alt="Web Development">
+                    </div>
+                    <h3 align="center">Web Development</h3>
+                    <p class="title">HTML, CSS, JavaScript, React</p>
+                    <p class="desc">
+                        Proficient in front-end technologies like HTML, CSS, and JavaScript. Experienced in building responsive and dynamic web applications using the React library. Passionate about creating engaging user interfaces and seamless user experiences.
+                    </p>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-img">
+                        <img src="./img/skill 2.png" alt="Backend Development">
+                    </div>
+                    <h3 align="center">Backend Development</h3>
+                    <p class="title">Node.js, PHP</p>
+                    <p class="desc">
+                        Skilled in server-side scripting with Node.js and PHP. Have experience in building robust and scalable backend systems to support web applications. Knowledgeable about RESTful API design and implementation.
+                    </p>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-img">
+                        <img src="./img/skill 3.png" alt="UI/UX">
+                    </div>
+                    <h3 align="center">UI/UX</h3>
+                    <p class="title">Adobe XD, Figma</p>
+                    <p class="desc">
+                        Proficient in designing intuitive user interfaces and creating delightful user experiences using tools like Adobe XD and Figma. Have a keen eye for detail and a passion for crafting designs that align with user needs and business goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-root">
+                <div class="project-item">
+                    <h3>Stock Management</h3>
+                    <img src="./img/PROJECT1.jpg" alt="project">
+
+                    <p>I developed a stock management system for Mettu Getachew Garage, streamlining their inventory control and making operations more efficient.</p>
+                    <a href="https://github.com/Abentesfaye/sells-system" class="btn btn-primary" target="_blank">Check the code</a>
+                </div>
+                <div class="project-item">
+                    <h3>Advice Generator App</h3>
+                    <img src="./img/PROJECT2.jpg" alt="project">
+
+                    <p>I developed an Advice Generator App where I applied my frontend development skills using HTML, CSS, and JavaScript. The app allows users to receive random pieces of advice on various topics. Additionally, I integrated API calling to fetch and display advice dynamically. It was an exciting project that honed my skills in both frontend design and backend API integration.</p>
+                    <a href="https://github.com/Abentesfaye/advice-generator-app-main" class="btn btn-primary" target="_blank">Check the code</a>
+                    <a href="https://delightful-licorice-a63cc1.netlify.app/" class="btn btn-primary" target="_blank">Hosted Here</a>
+                </div>
+                <div class="project-item">
+                    <h3>Managed Agency Portfolio Page</h3>
+                    <img src="./img/PROJECT3.jpg" alt="project">
+
+                    <p>Developed a portfolio page for a management agency showcasing their services, projects, and team. Implemented a responsive design to ensure an optimal viewing experience across various devices. Utilized HTML, CSS, and JavaScript to create a dynamic and visually appealing web presence for the agency.</p>
+                    <a href="https://github.com/Abentesfaye/manage-landing-page-master" class="btn btn-primary" target="_blank">Check the code</a>
+                    <a href="https://fancy-cendol-5f3033.netlify.app/#" class="btn btn-primary" target="_blank">Sample Web Hosted</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 align="center">Contact Me</h2>
+            <form action="" id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="How do I know you?">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="I want to reply to you">
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required>Say something...</textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+   
+</body>
+
+</html>

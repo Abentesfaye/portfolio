@@ -1,0 +1,389 @@
+/* Font Styles */
+@font-face {
+    font-family: 'Whisper';
+    src: local('Whisper'), url('../font/Whisper-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mina';
+    src: local('Mina'), url('../font/Mina-Regular.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mina';
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #3f17b8;
+    color: #fff;
+    padding: 10px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 50px;
+    font-family: 'Mina', sans-serif;
+    font-size: larger;
+}
+
+.logo {
+    margin-right: 40%;
+    font-weight: bolder;
+    font-family: 'Whisper', cursive;
+    font-size: 30px;
+}
+
+.logo:hover {
+    color: #000000;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Landing Page Styles */
+#landing {
+    background: url('../img/landing.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#landing h1 {
+    margin-top: -5%;
+    font-size: 8em;
+    font-family: 'Whisper', cursive;
+}
+
+#landing h3 {
+    font-size: 4em;
+    font-family: 'Mina', sans-serif;
+    margin-top: -6%;
+}
+
+#landing p {
+    font-size: 1.3em;
+    margin-top: -5%;
+    font-family: 'Mina', sans-serif;
+}
+
+span {
+    color: red;
+    font-family: 'Whisper', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    font-family: 'Mina', sans-serif;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* About Section Styles */
+#about {
+    background: url('../img/about.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 5% 0;
+}
+
+#about h2 {
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5%;
+}
+
+.left, .right {
+    width: 48%;
+}
+
+.root p {
+    font-size: 16px;
+    font-family: 'Mina', sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+
+/* Contact Section Styles */
+#contact {
+    background: url('../img/projectbg.jpg') center/cover no-repeat;
+    color: #fff;
+    margin: 0%;
+    padding: 40px 0;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    display: block;
+    margin: 10px;
+    font-family: 'Mina', sans-serif;
+}
+
+#contact h2 {
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#contact form {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 1%;
+    border-color: #007BFF;
+}
+
+#contact button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Mina', sans-serif;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #042549;
+}
+
+#contact input,
+#contact textarea {
+    width: calc(100% - 200px);
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+#contact input {
+    height: 50px;
+}
+
+#contact input::placeholder {
+    color: #070101;
+    font-family: 'Mina', sans-serif;
+    font-weight: bolder;
+}
+
+/* Skills Section Styles */
+#skills {
+    background: url('../img/about.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#skills .container .skill-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+#skills h2 {
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#skills h3 {
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#skills img {
+    width: 100px;
+    height: 90px;
+    justify-self: center;
+}
+
+.skill-img {
+    justify-content: center;
+    text-align: center;
+}
+
+.desc {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-family: 'Mina', sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Projects Section Styles */
+#projects {
+    background: url('../img/projectbg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.project-root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.project-item {
+    width: 48%; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+.project-item h3 {
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.project-item p {
+    text-align: justify;
+    margin-right: 7%;
+}
+
+.project-item img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for screens smaller than 600px (typical smartphones) */
+
+    nav .container {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #3f17b8;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav .logo {
+        margin-right: 10px;
+    }
+
+    .root {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .btnA {
+        margin-top: 20px;
+    }
+
+    #skills .container .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #projects .project-root {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    #contact form {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
