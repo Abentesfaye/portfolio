@@ -3,9 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>About me</title>    
+ <style>
+  @font-face {
+    font-family: 'Mina';
+    src: local('Mina'), url('./font/Mina-Regular.ttf') format('truetype');
+}  
+body {
+    font-family: 'mina', sans-serif;
+    background: url('/img/about-me.jpg') center/cover no-repeat;
+    color: rgb(168, 164, 164);
+}    
+nav {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.active {
+    color: #f8f8f8;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #ffffff;
+}
+.root {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5%;
+}
+
+.left, .right {
+    width: 48%;
+}
+#about-me img {
+    margin-top: -10%;
+    width: 90%;
+    height: 100%;
+}
+#about-me p{
+    text-align: justify;
+    color: beige;
+}
+hr {
+    border: 0;
+    border-radius: px; 
+    height: 2px;
+    width: 95%; 
+    background: #b8b7b7; 
+    margin-left: 2%;
+}
+#eduction {
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#eduction img {
+  border-radius: 50px;
+    width: 90%;
+    height: 100%;
+}
+.education-item h3 {
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #ffffff;  
+}
+#hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lead {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+span {
+    font-size: large;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+ </style>
 </head>
 <body>
-    
+    <div class="all">
+        <nav>
+            <a href="#about" class="active">About</a>
+            <a href="index.html">Home</a>
+        </nav>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="root">
+                <div class="left">
+                    <p>
+                        Hi, I'm Abenezer. I'm a computer science student at Mettu University, but my passion for learning goes beyond the classroom.
+            
+                        I believe traditional education is vital, but it sometimes limits creativity. Schools are often designed to produce labor for the industry, which can stifle innovation.
+                
+                        As I study computer science, I'm also an advocate for self-driven learning. I believe that true creativity and progress come from exploring on our own.
+                
+                        While I appreciate what I learn at university, I'm equally committed to pushing the boundaries of what's possible in computer science outside of it.
+                
+                        My goal is to prove that education isn't just about fitting in; it's about thinking differently and sparking innovation.
+                
+                       
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="./img/123.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+        <hr>
+        <section id="eduction">
+                <h2>Education</h2>
+                <div class="root">
+                    <div class="left">
+                       <img src="./img/4034735.jpg" alt="">
+                    </div>
+                    <div class="right">
+                            <div class="container">
+                                <div class="timeline">
+                                    <div class="education-item">
+                                        <div class="circle"></div>
+                                        <h3>Mettu University</h3>
+                                        <p>Currently pursuing a degree in Computer Science at Mettu University.</p>
+                                    </div>
+                        
+                                    <div class="education-item">
+                                        <div class="circle"></div>
+                                        <h3>ALX Africa</h3>
+                                        <p>Studied Software Engineering at ALX Africa, gaining valuable knowledge and networking with like-minded individuals.</p>
+                                    </div>
+                        
+                                    <div class="education-item">
+                                        <div class="circle"></div>
+                                        <h3>Evangadi Academy</h3>
+                                        <p>Completed a 6-month MERN stack full-stack bootcamp course at Evangadi Academy (EVANGADI).</p>
+                                    </div>
+                        
+                                    <div class="education-item">
+                                        <div class="circle"></div>
+                                        <h3>Harvard University - CS50</h3>
+                                        <p>Completed the CS50 course from Harvard University, Introduction to Computer Science and the Art of Programming, focusing on logic and problem-solving skills.</p>
+                                    </div>
+                        
+                                    <div class="education-item">
+                                        <div class="circle"></div>
+                                        <h3>Coursera - Full Stack (MERN) Course</h3>
+                                        <p>Completed a Meta Full Stack (MERN) course on Coursera and currently continuing my learning journey.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                         
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="hobbies" class="container">
+            <h2>Hobbies and Interests</h2>
+            <p class="lead">
+                Beyond coding, I'm on a mission to become a Node.js and MERN stack developer. My journey extends to React Native for mobile development. Here's a glimpse of my diverse interests:
+            </p>
+            <ul class="list-unstyled">
+                <li> <span>Node.js Enthusiast</span> - Passionate about building robust server-side solutions and creating seamless APIs.</li>
+                <li><span>MERN Stack Developer</span> - Dedicated to mastering the art of full-stack development with MongoDB, Express, React, and Node.js.</li>
+                <li><span>React Native Explorer</span> - Venturing into mobile app development with React Native for cross-platform experiences.</li>
+                <li><span>Problem Solver</span> - Enjoy tackling real-world challenges, optimizing algorithms, and finding innovative solutions.</li>
+
+                <li><span>Lifelong Learner</span> - Keeping pace with the evolving tech landscape, always hungry for new knowledge.</li>
+                <li><span>Adventurer</span> - Outside the digital realm, I'm an avid traveler and seeker of new experiences.</li>
+                <li><span>Bookworm and Writer</span> - Finding inspiration in literature and occasionally sharing thoughts on technology and more.</li>
+                <li><span>Coffee Connoisseur</span> - Fueled by the aroma of freshly brewed coffee during late-night coding sessions.</li>
+            </ul>
+        </section>
+    </div>
+   
 </body>
 </html>
