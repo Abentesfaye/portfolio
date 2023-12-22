@@ -135,6 +135,7 @@ span {
 
 #about h2 {
     font-size: 30px;
+    color: white;
     font-family: 'Mina', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -163,7 +164,7 @@ span {
     color: #fff;
     margin: 0%;
     padding: 40px 0;
-    height: 100vh;
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -326,7 +327,50 @@ span {
     width: 150px;
     border-radius: 10px;
 }
+hr {
+    border: 0;
+    border-radius: px; 
+    height: 2px;
+    width: 95%; 
+    background: #b8b7b7; 
+    margin-left: 2%;
+}
 
+.github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+}
+
+.git {
+font-size: 25px;
+ text-transform: capitalize;
+ font-weight: bolder;
+}
+.github img{
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+}
+.github-button {
+    margin-top: 10px;
+    padding: 10px 40px 10px 30px; 
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-family: 'Mina', sans-serif;
+    cursor: pointer;
+    border-radius: 65px;
+}
+
+.github-button:hover {
+    background-color: #124415;
+    color: #007BFF;
+}
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
